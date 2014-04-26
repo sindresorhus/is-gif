@@ -27,7 +27,7 @@ $ component install sindresorhus/is-gif
 ```js
 var readChunk = require('read-chunk'); // npm install read-chunk
 var isGif = require('is-gif');
-var buffer = readChunk('unicorn.gif', 0, 3);
+var buffer = readChunk.sync('unicorn.gif', 0, 3);
 
 isGif(buffer);
 //=> true
