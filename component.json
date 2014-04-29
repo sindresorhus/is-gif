@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Check if a Buffer/Uint8Array is a GIF image",
   "license": "MIT",
-  "repo": "sindresorhus/is-gif",
+  "repository": "sindresorhus/is-gif",
   "scripts": [
     "index.js"
   ],
