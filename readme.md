@@ -11,14 +11,6 @@ Used by [image-type](https://github.com/sindresorhus/image-type).
 $ npm install --save is-gif
 ```
 
-```sh
-$ bower install --save is-gif
-```
-
-```sh
-$ component install sindresorhus/is-gif
-```
-
 
 ## Usage
 
