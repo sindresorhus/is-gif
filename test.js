@@ -1,13 +1,10 @@
-'use strict';
-var assert = require('assert');
-var readChunk = require('read-chunk');
-var isGif = require('./');
+import fs from 'fs';
+import test from 'ava';
+import m from '.';
 
-function check(filename) {
-	return isGif(readChunk.sync(filename, 0, 3));
-}
+const check = filename => m(fs.readFileSync(filename));
 
-it('should detect GIF from Buffer', function () {
-	assert(check('fixture.gif'));
-	assert(!check('fixture.png'));
+test('detect GIF from Buffer', t => {
+	t.true(check('fixture.gif'));
+	t.false(check('fixture.png'));
 });

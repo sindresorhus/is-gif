@@ -1,10 +1,4 @@
 'use strict';
-module.exports = function (buf) {
-	if (!buf || buf.length < 3) {
-		return false;
-	}
+const fileType = require('file-type');
 
-	return buf[0] === 71 &&
-		buf[1] === 73 &&
-		buf[2] === 70;
-};
+module.exports = input => fileType(input).ext === 'gif';
