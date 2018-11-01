@@ -8,3 +8,7 @@ test('detect GIF from Buffer', t => {
 	t.true(check('fixture.gif'));
 	t.false(check('fixture.png'));
 });
+
+test('detect GIF from String', t => {
+	t.false(m('string'));
+});
