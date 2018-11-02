@@ -1,8 +1,8 @@
 import fs from 'fs';
 import test from 'ava';
-import m from '.';
+import isGif from '.';
 
-const check = filename => m(fs.readFileSync(filename));
+const check = filename => isGif(fs.readFileSync(filename));
 
 test('detect GIF from Buffer', t => {
 	t.true(check('fixture.gif'));
@@ -11,15 +11,15 @@ test('detect GIF from Buffer', t => {
 
 test('validate the input argument type', t => {
 	t.throws(() => {
-		check('x');
+		isGif('x');
 	}, /Expected the `input` argument to be of type `Uint8Array`/);
 
 	t.notThrows(() => {
-		check(Buffer.from('x'));
+		isGif(Buffer.from('x'));
 	});
 
 	t.notThrows(() => {
-		check(new Uint8Array());
+		isGif(new Uint8Array());
 	});
 });
 
