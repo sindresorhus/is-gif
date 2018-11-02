@@ -27,6 +27,8 @@ isGif(buffer);
 
 ### isGif(input)
 
+Returns a boolean of whether `input` is a GIF image.
+
 #### input
 
 Type: `Buffer` `Uint8Array`
