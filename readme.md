@@ -1,4 +1,4 @@
-# is-gif [![Build Status](https://travis-ci.com/sindresorhus/is-gif.svg?branch=master)](https://travis-ci.com/sindresorhus/is-gif)
+# is-gif
 
 > Check if a Buffer/Uint8Array is a [GIF](https://en.wikipedia.org/wiki/Graphics_Interchange_Format) image
 
