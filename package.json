@@ -1,6 +1,6 @@
 {
 	"name": "is-gif",
-	"version": "3.0.0",
+	"version": "4.0.0",
 	"description": "Check if a Buffer/Uint8Array is a GIF image",
 	"license": "MIT",
 	"repository": "sindresorhus/is-gif",
