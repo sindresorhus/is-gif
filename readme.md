@@ -14,7 +14,7 @@ $ npm install is-gif
 import {readChunk} from 'read-chunk';
 import isGif from 'is-gif';
 
-const buffer = await readChunk('unicorn.gif', 0, 3);
+const buffer = await readChunk('unicorn.gif', {length: 3});
 
 isGif(buffer);
 //=> true
